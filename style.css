@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 500px;
+    padding: 40px 15px;
+    box-sizing: border-box;
+    max-width: 400px;
+}
+
+ * {
+    user-select: none;
+    outline: none;
+ }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #000000;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 15px;
+}
+
+.display {
+    height: 100px;
+    width: 100%;
+    align-self: end;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    background: #000000;
+    border: none;
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 92px;
+    font-weight: 150;
+    font-family: "Inter", sans-serif;
+}
+
+.null-number {
+    grid-column: span 2;
+    border-radius: 40px !important;
+    text-align: left;
+    padding: 0 30px;
+}
+
+.calculator > button {
+    border-radius: 50%;
+    font-size:  40px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    transition: .1s ease;
+}
+
+.calculator > button:hover {
+    opacity: 0.8;
+}
+
+.calculator > button:active {
+    transform: scale(1.2);
+}
+
+
+.helper {
+    font-size: 32px !important;
+    background: #A5A5A5;
+    color: #000000;
+}
+
+ .percent-number {
+    font-size: 40px !important;
+ }
+
+.operators {
+    background: #FF9F0A;
+    color: #ffffff;
+}
+
+.numbers {
+    background: #333333;
+    color: #FFFFFF;
+}
+
