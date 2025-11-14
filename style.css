@@ -51,6 +51,7 @@ body {
     font-size: 92px;
     font-weight: 150;
     font-family: "Inter", sans-serif;
+    pointer-events: none;
 }
 
 .null-number {
@@ -88,7 +89,7 @@ body {
     font-size: 40px !important;
  }
 
-.operators {
+.operators, .equals {
     background: #FF9F0A;
     color: #ffffff;
 }

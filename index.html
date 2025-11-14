@@ -8,12 +8,12 @@
 </head>
 <body>
     <main>
-        <input type="text" class="display" placeholder="0">
+        <input type="text" class="display" value="0" readonly>
         <section class="calculator">
 
-            <button type="button" class="helper">AC</button>
-            <button type="button" class="helper">C</button>
-            <button type="button" class="helper percent-number">%</button>
+            <button type="button" class="helper" id="ac-btn">AC</button>
+            <button type="button" class="helper" id="c-btn">C</button>
+            <button type="button" class="helper percent-number">+/–</button>
             <button type="button" class="operators">/</button>
             
             <button type="button" class="numbers">7</button>
@@ -33,7 +33,7 @@
 
             <button type="button" class="numbers null-number">0</button>
             <button type="button" class="numbers">,</button>
-            <button type="button" class="operators">=</button>
+            <button type="button" class="equals">=</button>
 
         </section>
     </main>
